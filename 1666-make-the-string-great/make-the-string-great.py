@@ -10,9 +10,5 @@ class Solution(object):
                 st.pop()
                 continue
             st.append(i)
-        res=''
-        if st:
-            for i in st:
-                res+=i
-        return res
+        return "".join(st)
 
