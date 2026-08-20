@@ -10,7 +10,6 @@ class Solution(object):
             if c=="/":
                 if cur =="..":
                     if s:s.pop()
-
                 elif cur!="" and cur!=".":
                     s.append(cur)
                 cur=""
