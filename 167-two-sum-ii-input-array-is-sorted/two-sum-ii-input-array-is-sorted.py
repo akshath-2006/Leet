@@ -7,10 +7,12 @@ class Solution(object):
         """
         l=0
         r=len(numbers)-1
+        cur=numbers[l]+numbers[r]
         while True :
-            if numbers[l]+numbers[r]>target:
+            cur=numbers[l]+numbers[r]
+            if cur>target:
                 r-=1
-            elif numbers[l]+numbers[r]<target:
+            elif cur<target:
                 l+=1
             else:
                 return [l+1,r+1]
