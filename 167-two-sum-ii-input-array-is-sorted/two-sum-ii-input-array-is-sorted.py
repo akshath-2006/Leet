@@ -12,8 +12,7 @@ class Solution(object):
                 r-=1
             elif numbers[l]+numbers[r]<target:
                 l+=1
-            elif numbers[l]+numbers[r]==target:
+            else:
                 return [l+1,r+1]
-                break
 
         
