@@ -8,7 +8,6 @@ class Solution(object):
         l=0
         r=len(numbers)-1
         while True :
-            cur=numbers[l]+numbers[r]
             if numbers[l]+numbers[r]>target:
                 r-=1
             elif numbers[l]+numbers[r]<target:
