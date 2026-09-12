@@ -12,8 +12,10 @@ class Solution(object):
             cur=numbers[l]+numbers[r]
             if cur>target:
                 r-=1
+                continue
             elif cur<target:
                 l+=1
+                continue
             else:
                 return [l+1,r+1]
 
