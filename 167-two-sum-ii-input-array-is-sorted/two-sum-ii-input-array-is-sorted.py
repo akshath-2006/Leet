@@ -14,5 +14,6 @@ class Solution(object):
                 l+=1
             elif numbers[l]+numbers[r]==target:
                 return [l+1,r+1]
+                break
 
         
