@@ -11,7 +11,7 @@ class Solution(object):
         while l<r:
             if people[l]+people[r]>limit:
                 r-=1
-            elif people[l]+people[r]<=limit:
+            else:
                 tog+=1
                 l+=1
                 r-=1
