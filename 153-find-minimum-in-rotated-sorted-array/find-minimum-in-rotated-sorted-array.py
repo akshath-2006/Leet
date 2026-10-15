@@ -4,4 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        return min(nums)
+        l=sorted(nums)
+        while l!=nums:
+            rem=nums.pop()
+            nums.insert(0,rem)
+        return nums[0]
